@@ -10,12 +10,12 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 Jekyll also offers powerful support for code snippets:
 
-	def print_hi(name)
-	  puts "Hi, #{name}"
-	end
-	print_hi('Tom')
-	#=> prints 'Hi, Tom' to STDOUT.
-
+	private RequestQueue getRequestQueue() {
+        	if (mRequestQueue == null) {
+            		mRequestQueue = Volley.newRequestQueue(this);
+        	}
+        	return mRequestQueue;
+    	}
 
 Check out the [百度][baidu] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
