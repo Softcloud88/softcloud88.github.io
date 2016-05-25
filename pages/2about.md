@@ -37,4 +37,4 @@ icon: glyphicon-heart
 2016 Fighting
 
 [gaohaoyang-blog]: http://gaohaoyang.github.io
-[gaohaoyang-github-blog] https://github.com/Gaohaoyang/gaohaoyang.github.io
+[gaohaoyang-github-blog]: https://github.com/Gaohaoyang/gaohaoyang.github.io
