@@ -1,4 +1,5 @@
-yout: post
+---
+layout: post
 title:  "new page without chinese"
 date:   2016-05-26 22:32:54
 categories: jekyll
