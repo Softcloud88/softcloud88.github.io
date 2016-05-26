@@ -9,7 +9,7 @@ categories: components
 
 ### 正常情况生命周期：
 
-![Activity normal life circle](http://s16.sinaimg.cn/mw690/71e00b88gda37b3c6040f&690)
+![Activity normal life circle](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwilxp_RhPjMAhWJpI8KHeN1B3YQjRwIBw&url=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F8515936%2Fandroid-activity-life-cycle-what-are-all-these-methods-for&psig=AFQjCNE1J1JfJwL31n2qZpnwvV9YSoUNfw&ust=1464362249207081)
 
 当A启动B时相关的方法的调用顺序：
 A的onPause->B的onCreate、onStart、onResume->A的onStop。
