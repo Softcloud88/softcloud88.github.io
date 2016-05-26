@@ -4,9 +4,10 @@ title:  "Activity相关整理"
 date:   2015-05-26 20:31:54
 categories: components
 ---
+
 ###Activity的生命周期
 
-*正常情况生命周期：
+####正常情况生命周期：
 
 ![Activity normal life circle](http://s16.sinaimg.cn/mw690/71e00b88gda37b3c6040f&690)
 
@@ -17,7 +18,7 @@ onPause不宜做耗时操作，可能会影响到下个Activity到前台，不�
 
 ---
 
-*异常生命周期：
+####异常生命周期：
 
 系统的Activity异常终止和重建时候才会调用onSaveInstanceState和onRestoreInstanceState来储存和回复数据，正常情况下不会被触发。onSaveInstanceState调用发生在onStop之前，和onPause之间没有确定顺序，onRestoreInstanceState在onCreate之后。
 
@@ -36,3 +37,5 @@ keyboardHidden:键盘的可访问性发生了电话，比如用户调出了键�
         android:configChanges="orientation|locale"/>
 
 经过上面配置，当旋转屏幕或是调整系统语言时，这个Activity就不会被重新创建了。
+
+---
