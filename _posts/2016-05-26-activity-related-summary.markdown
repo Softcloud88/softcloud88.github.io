@@ -9,7 +9,7 @@ categories: components
 
 ### 正常情况生命周期：
 
-![Activity normal life circle](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwilxp_RhPjMAhWJpI8KHeN1B3YQjRwIBw&url=http%3A%2F%2Fstackoverflow.com%2Fquestions%2F8515936%2Fandroid-activity-life-cycle-what-are-all-these-methods-for&psig=AFQjCNE1J1JfJwL31n2qZpnwvV9YSoUNfw&ust=1464362249207081)
+![Activity normal life circle](http://images.cnitblog.com/blog/502866/201312/04171336-39dea5bfa2e047b6b2bba37d46a410f6.jpg)
 
 当A启动B时相关的方法的调用顺序：
 A的onPause->B的onCreate、onStart、onResume->A的onStop。
@@ -24,7 +24,7 @@ onPause不宜做耗时操作，可能会影响到下个Activity到前台，不�
 
 可以选择在onCreate和onRestoreInstanceState进行相应的重建，区别在于onCreate的Bundle savedInstaceState在正常启动时候是null，所以要判空；而onRestoreInstanceState只要被调用，其Bundle savedInstanceState就是非空的，不用额外判断。官方推荐在onRestoreInstanceState方法中来回复。
 
-对于更改系统配置而重建Activity，可以通过在manifest中对Activty设置conficChanges属性而避免相应的配置修改引起的重建。常用的三个配置:
+对于更改系统配置而重建Activity，可以通过在manifest中对Activty设置configChanges属性而避免相应的配置修改引起的重建。常用的三个配置:
 
 locale:设备的本地位置发生变化，一般指切换了系统语言。
 orientation:屏幕方向发生了改变，比如旋转了手机屏幕。
@@ -40,7 +40,7 @@ keyboardHidden:键盘的可访问性发生了电话，比如用户调出了键�
 
 ---
 
-###Activity的启动模式：
+### Activity的启动模式：
 
 #### LaunchMode:
 standard:在启动该Activity的Activity的栈中启动，非Activity的Context（如ApplicationContext）没有任务栈就会报错，相应的解决方法是设定"FLAG\_ACTIVITY\_NEW_TASK"标志位创建新的任务栈，实际上是用了singleTask模式。
