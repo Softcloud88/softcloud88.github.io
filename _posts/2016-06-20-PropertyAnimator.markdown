@@ -3,9 +3,7 @@ layout: post
 title:  "属性动画"
 date:   2016-06-19 23:27:54
 categories: ui
-
 ---
-# 属性动画
 ## ViewPropertyAnimator：
 
 ViewPropertyAnimator是最便利的绘制动画方法，对ViewPropertyAnimator的所有调用都会汇集到一个动画中。如：
