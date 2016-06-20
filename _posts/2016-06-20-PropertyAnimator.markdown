@@ -3,7 +3,10 @@ layout: post
 title:  "属性动画"
 date:   2016-06-19 23:27:54
 categories: ui
+
 ---
+
+
 ## ViewPropertyAnimator：
 
 ViewPropertyAnimator是最便利的绘制动画方法，对ViewPropertyAnimator的所有调用都会汇集到一个动画中。如：
@@ -11,6 +14,7 @@ ViewPropertyAnimator是最便利的绘制动画方法，对ViewPropertyAnimator�
 	viewToAnimate.animate().alpha(0f).translationX(1000f);
 
 ---
+
 ## ObjectAnimator：
 
 ObjectAnimator使用起来更加灵活，下面是个旋转图片的动画：
