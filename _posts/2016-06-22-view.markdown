@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "View绘制基础——坐标系与颜色"
+date:   2016-06-21 23:14:54
+categories: View
+---
+
+## View坐标系
+--------------
+
+### View的坐标系统是相对于父控件而言的.
+![view_axis](http://thumbnail0.baidupcs.com/thumbnail/85b300e273733a74b4fd68dd6a6447c5?fid=1510359473-250528-409326912723120&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-agJo7hEGy224otvMbyD%2Bk6ZIAkY%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035079518657573190&dp-callid=0&size=c710_u400&quality=100)
+
+### View的getX与getLeft的区别:
+
+![view_getX_getLeft](http://thumbnail0.baidupcs.com/thumbnail/04165328918926081096b808446a34a3?fid=1510359473-250528-868794386375650&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-lNB0fURhroDioWAHPYdsxf2aZIQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035257565999430932&dp-callid=0&size=c710_u400&quality=100)
+
+### MotionEvent中get和getRaw的区别:
+
+![motion_axis](http://thumbnail0.baidupcs.com/thumbnail/c52ad10b3bdeb304f545bc27494d1575?fid=1510359473-250528-200073048882868&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Dy%2FEslTA2yBTMuuL%2BWEvCu96eM4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035190557472228117&dp-callid=0&size=c710_u400&quality=100)
+
+## 颜色
+----------------
+
+### 颜色基础
+
+|颜色模式|备注|
+|:-:|:-:|
+|ARGB8888|四通道高精度(32位)|
+|ARGB4444|四通道低精度(16位)|
+|RGB565|屏幕默认模式(16位)|
+|Alpha8|仅有透明通道(8位)|
+
+其中字母表示通道类型，数值表示该类型用多少位二进制来描述。如ARGB8888则表示有四个通道(ARGB),每个对应的通道均用8位来描述。
+
+另外要注意：我们常用的是 ARGB8888 和 ARGB4444，而在所有的安卓设备屏幕上默认的模式都是RGB565。
+
+### 颜色绘制的混合模式：
+
+默认情况下，当一个颜色绘制到Canvas上时的效果类似绘制的内容以半透明的形式叠在原图上面，具体混合模式如下：
+
+finalRGB = drawdRGB + (1 - drawedAlpha) * originalRGB
+
+除此之外，还可以有不同的混合模式供我们选择，用Paint.setXfermode，指定不同的PorterDuff.Mode，具体形式如下图（src为绘制图，dst为原图）:
+
+![color_combine](http://thumbnail0.baidupcs.com/thumbnail/36da1447069fa897e8964204fc7a5eda?fid=1510359473-250528-913145412140857&time=1466611200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XpBGQotfkf%2Fa67637sXYkz%2BfGs4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035845922490360652&dp-callid=0&size=c710_u400&quality=100)
+
+
+
