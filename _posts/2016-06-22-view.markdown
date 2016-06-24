@@ -13,7 +13,7 @@ categories: View
 
 ### View的getX与getLeft的区别:
 
-![view_getX_getLeft]https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/view_getX_getLeft.png?raw=true)
+![view_getX_getLeft](https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/view_getX_getLeft.png?raw=true)
 
 ### MotionEvent中get和getRaw的区别:
 
