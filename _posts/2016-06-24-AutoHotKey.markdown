@@ -46,8 +46,6 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 
 ### 一些符号对应
 
----
-
 |符号|描述|
 |:-:|:-:|
 |#|Win(Windows logo key)|
@@ -74,6 +72,7 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 		send, "我点击了做Ctrl"
 	Return
 
+---
 
 ### 简单的语法说明：
 
@@ -150,6 +149,8 @@ b.增加SetKeyDelay，如："SetKeyDelay, 0, 50"或者 "SetKeyDelay, 150, 150, P
 c.如果以上都没能解决你的问题，研读一下[这里](https://autohotkey.com/docs/commands/ControlSend.htm)。
 
 如果以上方案都没能解决你的问题，那么可以宣布你作弊未遂了...
+
+---
 
 ### 结语
 
