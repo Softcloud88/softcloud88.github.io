@@ -79,7 +79,7 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 
 经过上面几个例子，相信你已经了解了大致的语法，下面列举几个例子供你参考帮助你实现你想要的功能：
 
-####1.组合键：
+#### 1.组合键：
 	
 Alt + e 相当于按下↑：
 
@@ -99,7 +99,7 @@ Ctrl + Shift + Alt + e 相当于按下Ctrl + Shift + ← （用于向左选中�
 		Send, ^c
 	Return
 	
-####2.按键的按下与抬起：
+#### 2.按键的按下与抬起：
 
 	; This is how you hold 1 key down and press another key (or keys).
 	; If 1 method doesn't work in your program, please try the other.
@@ -114,12 +114,12 @@ Ctrl + Shift + Alt + e 相当于按下Ctrl + Shift + ← （用于向左选中�
 	
 这里直接引用官方的例子，很容易理解，{按键 down}代表你的按键被按下，{按键 up}代表你的按键抬起，想要按一会儿？最后三行表示按住"↑"键持续一秒。
 
-####3.关于hotstring的一点说明：
+#### 3.关于hotstring的一点说明：
 
 	::kb::科比·布莱恩特		；你输入kb后要输入一个EndChar（回车或者空格）才会将kb转换成你偶像
 	:*:kb::科比·布莱恩特		; 你输入kb之后，直接会出现你偶像
 
-####4.掉起一些事件：
+#### 4.掉起一些事件：
 
 	Numpad0 & Numpad1::
 		MsgBox "我好帅".
@@ -141,7 +141,7 @@ Ctrl + Shift + Alt + e 相当于按下Ctrl + Shift + ← （用于向左选中�
 	
 想深入了解的话，点击[这里](https://autohotkey.com/docs/commands/Run.htm)查看更多相关信息。
 
-####5.如果你针对游戏设置开机键发现不行，可以尝试一种或几种方法：
+#### 5.如果你针对游戏设置开机键发现不行，可以尝试一种或几种方法：
 
 a.用[SendPlay](https://autohotkey.com/docs/commands/Send.htm#SendPlayDetail)，第一步，SendPlay替换Send;(参见[这里](https://autohotkey.com/docs/commands/Send.htm)),第二步，SendMode Play(参见[这里](https://autohotkey.com/docs/commands/SendMode.htm));第三步(非必须)，设置hotstring option SP(参见[这里](https://autohotkey.com/docs/Hotstrings.htm#SendMode)).
 
