@@ -5,9 +5,6 @@ date:   2016-06-23 23:35:54
 categories: tools
 ---
 
-## AutoHotKey简明教程
---------------
-
 ### 简单功能介绍
 
 其实写这篇文章的原因主要是由于换了家公司，开始用windows系统，而windows平台没有诸如karabiner一类简单粗暴的改建工具，而我又习惯于用RAlt+EDSF进行方向键操作所以简单看了下AutoHotKey的官方教程，在此做以记录。
@@ -34,6 +31,7 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 	^i::
 		Send, 我是天才
 	Return
+
 保存关闭，然后双击它，这货就开始运行了，你可以在右下角(或者右下角的三角点开)看见它的图标，我是在mac上写这篇文章了，就不截图了。然后随便找个能打字的地方(新建可txt即可)，然后在打字状态下按"ctrl + i"试一试，你会发现就这么简单，你就定义了一个打印"我是天才"的快捷键。
 
 回来再来试一试hotstring，在原来的文件里另起一行开始输入：
@@ -68,12 +66,12 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 	; When making a hotkey... 
 	; WRONG 这么用是错的，在这里不需要转意
 	{LCtrl}::
-  		 send, "我点击了左Ctrl"
+		send, "我点击了左Ctrl"
 	Return
 
 	; CORRECT 此为正确形式
 	LCtrl::
-   		send, "我点击了做Ctrl"
+		send, "我点击了做Ctrl"
 	Return
 
 
@@ -83,17 +81,20 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 
 1.组合键：
 	
-	; Alt + e 相当于按下↑
+Alt + e 相当于按下↑：
+
 	!e::
 		Send, {Up}
 	Return
 	
-	; Ctrl + Shift + Alt + e 相当于按下Ctrl + Shift + ← （用于向左选中一个单词）
+Ctrl + Shift + Alt + e 相当于按下Ctrl + Shift + ← （用于向左选中一个单词）：
+
 	^!+e::
 		Send, ^+{Left}
 	Return
 	
-	; 左Alt + c 相当于Ctrl + c （Mac的复制是这个键位，觉得较为人性化）
+左Alt + c 相当于Ctrl + c （Mac的复制是这个键位，觉得较为人性化）：
+
 	LAlt & c::
 		Send, ^c
 	Return
@@ -121,7 +122,7 @@ hotkey字面意思为热键，你可以用它来定义快捷键，比如你想�
 4.掉起一些事件：
 
 	Numpad0 & Numpad1::
-   		MsgBox "我好帅".
+		MsgBox "我好帅".
 	Return
 
 	Numpad0 & Numpad2::
