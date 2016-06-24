@@ -9,15 +9,15 @@ categories: View
 --------------
 
 ### View的坐标系统是相对于父控件而言的.
-![view_axis](http://thumbnail0.baidupcs.com/thumbnail/85b300e273733a74b4fd68dd6a6447c5?fid=1510359473-250528-409326912723120&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-agJo7hEGy224otvMbyD%2Bk6ZIAkY%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035079518657573190&dp-callid=0&size=c710_u400&quality=100)
+![view_axis](https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/view_axis.jpg?raw=true)
 
 ### View的getX与getLeft的区别:
 
-![view_getX_getLeft](http://thumbnail0.baidupcs.com/thumbnail/04165328918926081096b808446a34a3?fid=1510359473-250528-868794386375650&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-lNB0fURhroDioWAHPYdsxf2aZIQ%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035257565999430932&dp-callid=0&size=c710_u400&quality=100)
+![view_getX_getLeft]https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/view_getX_getLeft.png?raw=true)
 
 ### MotionEvent中get和getRaw的区别:
 
-![motion_axis](http://thumbnail0.baidupcs.com/thumbnail/c52ad10b3bdeb304f545bc27494d1575?fid=1510359473-250528-200073048882868&time=1466607600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Dy%2FEslTA2yBTMuuL%2BWEvCu96eM4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035190557472228117&dp-callid=0&size=c710_u400&quality=100)
+![motion_axis](https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/motion_axis.jpg?raw=true)
 
 ## 颜色
 ----------------
@@ -43,7 +43,7 @@ finalRGB = drawdRGB + (1 - drawedAlpha) * originalRGB
 
 除此之外，还可以有不同的混合模式供我们选择，用Paint.setXfermode，指定不同的PorterDuff.Mode，具体形式如下图（src为绘制图，dst为原图）:
 
-![color_combine](http://thumbnail0.baidupcs.com/thumbnail/36da1447069fa897e8964204fc7a5eda?fid=1510359473-250528-913145412140857&time=1466611200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-XpBGQotfkf%2Fa67637sXYkz%2BfGs4%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=4035845922490360652&dp-callid=0&size=c710_u400&quality=100)
+![color_combine](https://github.com/Softcloud88/softcloud88.github.io/blob/master/res/2016-06-22/color_combine_strategy.jpg?raw=true)
 
 
 
