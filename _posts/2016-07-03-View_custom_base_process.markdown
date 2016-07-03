@@ -2,7 +2,7 @@
 layout: post
 title:  "自定义View流程梳理"
 date:   2016-07-02 15:57:54
-categories: tools
+categories: View
 ---
 
 ### 流程概要
