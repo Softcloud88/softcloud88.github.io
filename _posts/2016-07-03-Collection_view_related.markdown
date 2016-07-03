@@ -13,6 +13,10 @@ categories: View
 
 ### Articles
 
+---
+
+#### From 微信公众号“安卓应用频道”
+
 [安卓自定义View进阶：绘制基本形状](https://mp.weixin.qq.com/s?__biz=MzA3MDMyMjkzNg==&mid=2652261754&idx=1&sn=72fd534b52fd83ec7cc97324726298ef&scene=1&srcid=0703BQn9MyGdmQY3xfOmg06i&key=77421cf58af4a653d49ae0af7dd13bd8c13691697bce335fd77bc8295b40bb174c84331b29ff59724ea78dba7723c4ae&ascene=0&uin=NTgyNTMwNDE1&devicetype=iMac+Macmini7%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=iAYqcH5FWE3PzS0NkD5gYstI9RzVhwqgXnK1k9y2m76RhLR5uNg9WU6LwGCNvnfH)
 
 [安卓自定义View进阶：画布操作](https://mp.weixin.qq.com/s?__biz=MzA3MDMyMjkzNg==&mid=2652261756&idx=1&sn=218b5eae4320f84d9c36ea778b04c3bc&scene=1&srcid=0703424lO8VU8n7wsKDvtibj&key=77421cf58af4a653aa763d94412322f09d3476444ac81e587357a8c39f5d8b7ed9277845547ab249f2de5e9d62baea49&ascene=0&uin=NTgyNTMwNDE1&devicetype=iMac+Macmini7%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=iAYqcH5FWE3PzS0NkD5gYstI9RzVhwqgXnK1k9y2m76RhLR5uNg9WU6LwGCNvnfH)
@@ -30,6 +34,8 @@ categories: View
 [安卓自定义 View 进阶：贝塞尔曲线（下）](https://mp.weixin.qq.com/s?__biz=MzA3MDMyMjkzNg==&mid=2652261764&idx=2&sn=7fdbe7c0bddcb433a784debfd637508b&scene=1&srcid=0703FcYl5K71Xa0xAqFeBzW2&key=77421cf58af4a653b0e26f8c5f13bbb4cc747e7e918fd6b0ecab37f16d42e675d0635f6e049a51710c4db96d76113a13&ascene=0&uin=NTgyNTMwNDE1&devicetype=iMac+Macmini7%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=iAYqcH5FWE3PzS0NkD5gYstI9RzVhwqgXnK1k9y2m76RhLR5uNg9WU6LwGCNvnfH)
 
 [Android 自定义控件之日历控件的实现](https://mp.weixin.qq.com/s?__biz=MzA3MDMyMjkzNg==&mid=2652261773&idx=1&sn=8de7755277214963bec44ca3916b3538&scene=1&srcid=0703ickiC1NFWtvDQTe6pemW&key=77421cf58af4a653c5fdec47f7598c81992270ef549e1d5c225fab3fa4a8ae9501358bf6de052b8b9c817b311924115c&ascene=0&uin=NTgyNTMwNDE1&devicetype=iMac+Macmini7%2C1+OSX+OSX+10.11.5+build(15F34)&version=11020201&pass_ticket=iAYqcH5FWE3PzS0NkD5gYstI9RzVhwqgXnK1k9y2m76RhLR5uNg9WU6LwGCNvnfH)
+
+---
 
 
 
